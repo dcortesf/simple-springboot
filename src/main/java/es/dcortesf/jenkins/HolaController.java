@@ -1,4 +1,4 @@
-package es.dmunozfer.jenkins;
+package es.dcortesf.jenkins;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,7 +12,7 @@ public class HolaController {
     public String raiz() {
 	return "redirect:/hola";
     }
-    
+
     @RequestMapping("/hola")
     public String hola(@RequestParam(value = "nombre", required = false, defaultValue = "Mundo") String nombre,
 	    Model model) {

@@ -1,4 +1,4 @@
-package es.dmunozfer.jenkins;
+package es.dcortesf.jenkins;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
