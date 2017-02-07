@@ -1,4 +1,4 @@
-package es.dmunozfer.jenkins;
+package es.dcortesf.jenkins;
 
 import static org.hamcrest.Matchers.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -35,7 +35,7 @@ public class HolaControllerTest {
 	.andExpect(status().is3xxRedirection())
 	.andExpect(header().string("Location", "/hola"));
     }
-    
+
     @Test
     public void holaSinParametros() throws Exception {
 	mockMvc.perform(get("/hola"))
@@ -46,7 +46,7 @@ public class HolaControllerTest {
 	.andExpect(content().string(containsString("¡Hola Mundo!")))
 	;
     }
-    
+
     @Test
     public void holaDavid() throws Exception {
 	mockMvc.perform(get("/hola?nombre=David"))
