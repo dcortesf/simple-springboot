@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: es.dcortesf.jenkins.HolaControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.521 sec <<< FAILURE! - in es.dcortesf.jenkins.HolaControllerTest
+holaDavid(es.dcortesf.jenkins.HolaControllerTest)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: Response content
+Expected: a string containing "¡Hola David!a"
+     but: was "<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Simple Springboot App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>¡Hola David!</p>
+</body>
+</html>
+"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$4.match(ContentResultMatchers.java:137)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at es.dcortesf.jenkins.HolaControllerTest.holaDavid(HolaControllerTest.java:57)
+
